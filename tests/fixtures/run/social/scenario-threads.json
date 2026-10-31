@@ -1,0 +1,22 @@
+{
+  "social:@V/r1/b0": {"actions": [
+    {"id": "r1-b0-0", "personaId": "cohort-first-1", "type": "post", "targetId": "", "text": "@V r1-b0-0", "label": "Hypothesis"},
+    {"id": "r1-b0-1", "personaId": "cohort-first-2", "type": "post", "targetId": "", "text": "@V r1-b0-1", "label": "Hypothesis"}
+  ]},
+  "social:@V/r1/b1": {"actions": [
+    {"id": "r1-b1-0", "personaId": "cohort-night-2", "type": "post", "targetId": "", "text": "@V r1-b1-0", "label": "Hypothesis"}
+  ]},
+  "social:@V/r1/b2": {"actions": [
+    {"id": "r1-b2-0", "personaId": "cohort-share-3", "type": "post", "targetId": "", "text": "@V r1-b2-0", "label": "Hypothesis"}
+  ]},
+  "social:@V/r2/b0": {"actions": [
+    {"id": "r2-b0-0", "personaId": "cohort-first-1", "type": "post", "targetId": "", "text": "@V r2-b0-0", "label": "Hypothesis"},
+    {"id": "r2-b0-1", "personaId": "cohort-first-3", "type": "reply", "targetId": "r1-b0-1", "text": "@V r2-b0-1", "label": "Hypothesis"}
+  ]},
+  "social:@V/r2/b1": {"actions": [
+    {"id": "r2-b1-0", "personaId": "cohort-night-3", "type": "like", "targetId": "r1-b1-0", "text": "@V r2-b1-0", "label": "Hypothesis"},
+    {"id": "r2-b1-1", "personaId": "cohort-share-1", "type": "reply", "targetId": "r1-b0-1", "text": "@V r2-b1-1", "label": "Hypothesis"}
+  ]},
+  "social:@V/r2/b2": {"actions": [
+  ]}
+}

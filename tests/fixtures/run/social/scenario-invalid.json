@@ -1,0 +1,19 @@
+{
+  "social:alpha/r1/b0": {"actions": [
+    {"id": "r1-b0-0", "personaId": "cohort-first-1", "type": "post", "targetId": "", "text": "KEPT-POST", "label": "Hypothesis"},
+    {"id": "r1-b0-5", "personaId": "cohort-first-2", "type": "post", "targetId": "", "text": "DROP-IDS", "label": "Hypothesis"},
+    {"id": "r1-b0-2", "personaId": "cohort-night-3", "type": "post", "targetId": "", "text": "DROP-PERSONA", "label": "Hypothesis"},
+    {"id": "r1-b0-3", "personaId": "cohort-first-3", "type": "reply", "targetId": "r1-b9-9", "text": "DROP-UNKNOWN-TARGET", "label": "Hypothesis"},
+    {"id": "r1-b0-4", "personaId": "cohort-night-1", "type": "shout", "targetId": "", "text": "DROP-TYPE", "label": "Hypothesis"},
+    {"id": "r1-b0-5", "personaId": "cohort-first-1", "type": "post", "targetId": "r1-b0-0", "text": "DROP-POST-TARGET", "label": "Hypothesis"},
+    {"id": "r1-b0-6", "personaId": "cohort-first-2", "type": "reply", "targetId": "r1-b0-0", "text": "KEPT-REPLY", "label": "Hypothesis"},
+    {"id": "r1-b0-7", "personaId": "cohort-night-1", "type": "like", "targetId": "r1-b0-3", "text": "DROP-DEAD-TARGET", "label": "Hypothesis"}
+  ]},
+  "social:alpha/r1/b2": {"actions": [
+    {"id": "r1-b2-0", "personaId": "cohort-share-3", "type": "post", "targetId": "", "text": "KEPT-B2-0", "label": "Hypothesis"},
+    {"id": "r1-b2-1", "personaId": "cohort-share-3", "type": "post", "targetId": "", "text": "KEPT-B2-1", "label": "Hypothesis"},
+    {"id": "r1-b2-2", "personaId": "cohort-share-3", "type": "post", "targetId": "", "text": "KEPT-B2-2", "label": "Hypothesis"},
+    {"id": "r1-b2-3", "personaId": "cohort-share-3", "type": "post", "targetId": "", "text": "KEPT-B2-3", "label": "Hypothesis"},
+    {"id": "r1-b2-4", "personaId": "cohort-share-3", "type": "post", "targetId": "", "text": "DROP-OVERFLOW", "label": "Hypothesis"}
+  ]}
+}

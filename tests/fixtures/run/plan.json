@@ -1,0 +1,30 @@
+{
+  "mode": "journey",
+  "variants": [
+    {"id": "alpha", "label": "Lead with free tracking", "description": "ZQX-ALPHA-TEXT: free baby tracking and family sharing"},
+    {"id": "bravo", "label": "Lead with nap prediction", "description": "ZQX-BRAVO-TEXT: predict your baby's next nap"},
+    {"id": "charlie", "label": "Current mixed listing", "description": "ZQX-CHARLIE-TEXT: the listing as it reads today"}
+  ],
+  "cohorts": [
+    {"id": "cohort-first", "entityId": "cohort-first", "role": "actor", "personaCount": 3, "reason": "Three slants cover first-week doubts."},
+    {"id": "cohort-night", "entityId": "cohort-night", "role": "actor", "personaCount": 3, "reason": "Three slants cover night-time use."},
+    {"id": "cohort-return", "entityId": "cohort-return", "role": "actor", "personaCount": 3, "reason": "Three slants cover returning users."},
+    {"id": "cohort-share", "entityId": "cohort-share", "role": "actor", "personaCount": 3, "reason": "Three slants cover sharing."},
+    {"id": "partner", "entityId": "partner", "role": "context", "personaCount": 0, "reason": "Appears only in an invite step."}
+  ],
+  "timeline": [
+    {"step": 1, "label": "See the listing", "description": "The persona reads the listing and decides whether to install."},
+    {"step": 2, "label": "First week", "description": "The persona decides whether to keep using the app."}
+  ],
+  "rules": [
+    "Label every speculative reason as a hypothesis.",
+    "Give every claim in a report at least one citation.",
+    "State no measured or predicted rates or percentages unless the scenario explicitly asks for them; naming a metric is allowed."
+  ],
+  "expectedOutputs": [
+    "Objections for each message, by cohort.",
+    "Unanswered questions for each message.",
+    "Expectations the first week does not meet."
+  ],
+  "budget": {"simulationAgentCalls": 36, "cap": 60, "dropped": []}
+}

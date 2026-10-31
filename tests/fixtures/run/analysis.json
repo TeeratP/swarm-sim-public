@@ -1,0 +1,11 @@
+{
+  "objections": [
+    {"text": "Hypothesis: the persona doubts that free tracking stays free.", "cohortId": "cohort-first", "citation": "alpha/cohort-first-1:1"}
+  ],
+  "unansweredQuestions": [
+    {"text": "The persona asks whether the app needs an account.", "cohortId": "cohort-night", "citation": "alpha/cohort-night-1:1"}
+  ],
+  "expectationGaps": [
+    {"text": "Hypothesis: the persona expects a nap prediction in week one.", "cohortId": "cohort-share", "citation": "alpha/cohort-share-1:2"}
+  ]
+}

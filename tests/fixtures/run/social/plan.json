@@ -1,0 +1,25 @@
+{
+  "mode": "social",
+  "variants": [
+    {"id": "alpha", "label": "Lead with free tracking", "description": "ZQX-ALPHA-TEXT: free baby tracking and family sharing"},
+    {"id": "bravo", "label": "Lead with nap prediction", "description": "ZQX-BRAVO-TEXT: predict your baby's next nap"}
+  ],
+  "cohorts": [
+    {"id": "cohort-first", "entityId": "cohort-first", "role": "actor", "personaCount": 3, "reason": "Three slants cover first-week doubts."},
+    {"id": "cohort-night", "entityId": "cohort-night", "role": "actor", "personaCount": 3, "reason": "Three slants cover night-time use."},
+    {"id": "cohort-share", "entityId": "cohort-share", "role": "actor", "personaCount": 3, "reason": "Three slants cover sharing."},
+    {"id": "partner", "entityId": "partner", "role": "context", "personaCount": 0, "reason": "Appears only in an invite step."}
+  ],
+  "rounds": 3,
+  "reason": "Three rounds let replies build on posts.",
+  "rules": [
+    "Label every speculative reason as a hypothesis.",
+    "Give every claim in a report at least one citation.",
+    "State no measured or predicted rates or percentages unless the scenario explicitly asks for them; naming a metric is allowed."
+  ],
+  "expectedOutputs": [
+    "Objections for each message, by cohort.",
+    "Unanswered questions for each message."
+  ],
+  "budget": {"simulationAgentCalls": 18, "cap": 60, "dropped": []}
+}

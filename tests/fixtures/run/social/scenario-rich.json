@@ -1,0 +1,27 @@
+{
+  "social:@V/r1/b0": {"actions": [
+    {"id": "r1-b0-0", "personaId": "cohort-first-1", "type": "post", "targetId": "", "text": "@V r1-b0-0", "label": "Hypothesis"},
+    {"id": "r1-b0-1", "personaId": "cohort-first-2", "type": "post", "targetId": "", "text": "@V r1-b0-1", "label": "Hypothesis"},
+    {"id": "r1-b0-2", "personaId": "cohort-night-1", "type": "post", "targetId": "", "text": "@V r1-b0-2", "label": "Hypothesis"},
+    {"id": "r1-b0-3", "personaId": "cohort-first-3", "type": "reply", "targetId": "r1-b0-0", "text": "@V r1-b0-3", "label": "Hypothesis"},
+    {"id": "r1-b0-4", "personaId": "cohort-night-1", "type": "like", "targetId": "r1-b0-0", "text": "@V r1-b0-4", "label": "Hypothesis"},
+    {"id": "r1-b0-5", "personaId": "cohort-first-2", "type": "reply", "targetId": "r1-b0-1", "text": "@V r1-b0-5", "label": "Hypothesis"},
+    {"id": "r1-b0-6", "personaId": "cohort-first-1", "type": "ignore", "targetId": "", "text": "@V r1-b0-6", "label": "Hypothesis"},
+    {"id": "r1-b0-7", "personaId": "cohort-first-3", "type": "post", "targetId": "", "text": "@V r1-b0-7", "label": "Hypothesis"},
+    {"id": "r1-b0-8", "personaId": "cohort-night-1", "type": "post", "targetId": "", "text": "@V r1-b0-8", "label": "Hypothesis"},
+    {"id": "r1-b0-9", "personaId": "cohort-first-1", "type": "post", "targetId": "", "text": "@V r1-b0-9", "label": "Hypothesis"},
+    {"id": "r1-b0-10", "personaId": "cohort-first-3", "type": "post", "targetId": "", "text": "@V r1-b0-10", "label": "Hypothesis"},
+    {"id": "r1-b0-11", "personaId": "cohort-night-1", "type": "post", "targetId": "", "text": "@V r1-b0-11", "label": "Hypothesis"}
+  ]},
+  "social:@V/r1/b1": {"actions": [
+    {"id": "r1-b1-0", "personaId": "cohort-night-2", "type": "post", "targetId": "", "text": "@V r1-b1-0", "label": "Hypothesis"},
+    {"id": "r1-b1-1", "personaId": "cohort-night-3", "type": "reply", "targetId": "r1-b1-0", "text": "@V r1-b1-1", "label": "Hypothesis"},
+    {"id": "r1-b1-2", "personaId": "cohort-share-1", "type": "post", "targetId": "", "text": "@V r1-b1-2", "label": "Hypothesis"},
+    {"id": "r1-b1-3", "personaId": "cohort-share-2", "type": "like", "targetId": "r1-b1-2", "text": "@V r1-b1-3", "label": "Hypothesis"},
+    {"id": "r1-b1-4", "personaId": "cohort-share-2", "type": "post", "targetId": "", "text": "@V r1-b1-4", "label": "Hypothesis"}
+  ]},
+  "social:@V/r1/b2": {"actions": [
+    {"id": "r1-b2-0", "personaId": "cohort-share-3", "type": "post", "targetId": "", "text": "@V r1-b2-0", "label": "Hypothesis"},
+    {"id": "r1-b2-1", "personaId": "cohort-share-3", "type": "ignore", "targetId": "", "text": "@V r1-b2-1", "label": "Hypothesis"}
+  ]}
+}

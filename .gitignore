@@ -1,0 +1,15 @@
+# Ignore everything at the top level, then opt in only what is publishable.
+# New top-level files and folders (analysis/, runs/, local notes) stay private by default.
+/*
+!/.gitignore
+!/.claude/
+!/docs/
+!/scripts/
+!/tests/
+!/CLAUDE.md
+!/README.md
+!/package.json
+
+# Never publish local Claude settings or worktrees.
+/.claude/settings.local.json
+node_modules/

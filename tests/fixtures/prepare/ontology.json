@@ -1,0 +1,41 @@
+{
+  "entityTypes": [
+    {"name": "Product", "description": "The app being marketed."},
+    {"name": "Feature", "description": "A capability of the app."},
+    {"name": "Message", "description": "A lead message the listing could open with."},
+    {"name": "Cohort", "description": "A group of people in a similar situation."}
+  ],
+  "entities": [
+    {"id": "App_Product", "type": "Product", "name": "Example baby tracker", "summary": "A baby tracking app with a US App Store listing.", "source": "01_overview.md:3"},
+    {"id": "Feature_Sharing", "type": "Feature", "name": "Family sharing", "summary": "Lets a parent share a baby's log with family.", "source": "01_overview.md:9"},
+    {"id": "Message_A", "type": "Message", "name": "Message A", "summary": "Free baby tracking and family sharing.", "source": "02_scenario.md:12"},
+    {"id": "Message_B", "type": "Message", "name": "Message B", "summary": "Predict your baby's next nap.", "source": "02_scenario.md:13"},
+    {"id": "Message_Baseline", "type": "Message", "name": "Current mixed message", "summary": "The listing as it reads today.", "source": "02_scenario.md:14"},
+    {"id": "Parent_FirstLog_Representative", "type": "Cohort", "name": "First-log parent", "summary": "A parent about to log a first feed.", "source": "03_cohorts.md:3"},
+    {"id": "Parent_Returning_Representative", "type": "Cohort", "name": "Returning parent", "summary": "A parent who has used a tracker before.", "source": "03_cohorts.md:8"},
+    {"id": "Parent_Sharing_Representative", "type": "Cohort", "name": "Sharing parent", "summary": "A parent who wants the whole family to see the log.", "source": "03_cohorts.md:13"},
+    {"id": "Parent_Planner_Representative", "type": "Cohort", "name": "Planning parent", "summary": "A parent who plans the day around naps.", "source": "03_cohorts.md:18"},
+    {"id": "Partner_Representative", "type": "Cohort", "name": "Partner", "summary": "The other caregiver at home.", "source": "03_cohorts.md:23"},
+    {"id": "Grandparent_Representative", "type": "Cohort", "name": "Grandparent", "summary": "A grandparent who helps with care.", "source": "03_cohorts.md:27"},
+    {"id": "Daycare_Representative", "type": "Cohort", "name": "Daycare", "summary": "A daycare that looks after the baby.", "source": "03_cohorts.md:31"}
+  ],
+  "relations": [
+    {"from": "Parent_FirstLog_Representative", "to": "Partner_Representative", "type": "invites", "status": "Assumption", "source": "03_cohorts.md:5"},
+    {"from": "Parent_Sharing_Representative", "to": "Grandparent_Representative", "type": "invites", "status": "Assumption", "source": "03_cohorts.md:15"},
+    {"from": "Parent_Returning_Representative", "to": "Daycare_Representative", "type": "hands_over_to", "status": "Hypothesis", "source": "03_cohorts.md:10"},
+    {"from": "Parent_Planner_Representative", "to": "Partner_Representative", "type": "shares_schedule_with", "status": "Assumption", "source": "03_cohorts.md:20"},
+    {"from": "Parent_FirstLog_Representative", "to": "Feature_Sharing", "type": "may_use", "status": "Unknown", "source": "03_cohorts.md:6"}
+  ],
+  "claims": [
+    {"text": "App_Product is free to download.", "status": "Fact", "source": "01_overview.md:4"},
+    {"text": "Feature_Sharing needs an account for every family member.", "status": "Fact", "source": "01_overview.md:10"},
+    {"text": "The scenario asks which lead message should open the US listing.", "status": "Fact", "source": "02_scenario.md:5"},
+    {"text": "Message_B makes a prediction that the app may not deliver in week one.", "status": "Hypothesis", "source": "02_scenario.md:20"},
+    {"text": "Message_A leads with price and family sharing.", "status": "Fact", "source": "04_messages.md:3"},
+    {"text": "Message_B leads with nap prediction.", "status": "Fact", "source": "04_messages.md:8"},
+    {"text": "Parent_FirstLog_Representative tends to doubt that free tracking stays free.", "status": "Hypothesis", "source": "05_evidence.md:4"},
+    {"text": "Parent_Returning_Representative expects to import history from the tracker they used before.", "status": "Assumption", "source": "05_evidence.md:9"},
+    {"text": "Parent_Sharing_Representative wants every family member to see the log without extra setup.", "status": "Assumption", "source": "05_evidence.md:14"},
+    {"text": "Parent_Planner_Representative wants nap times to guide the day.", "status": "Hypothesis", "source": "05_evidence.md:19"}
+  ]
+}

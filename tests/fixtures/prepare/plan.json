@@ -1,0 +1,41 @@
+{
+  "mode": "journey",
+  "variants": [
+    {"id": "A", "label": "Message A", "description": "Free baby tracking and family sharing"},
+    {"id": "B", "label": "Message B", "description": "Predict your baby's next nap"},
+    {"id": "baseline", "label": "Current mixed message", "description": "The listing as it reads today."}
+  ],
+  "cohorts": [
+    {"id": "Parent_FirstLog_Representative", "entityId": "Parent_FirstLog_Representative", "role": "actor", "personaCount": 3, "reason": "Three slants cover the range of first-week doubts."},
+    {"id": "Parent_Returning_Representative", "entityId": "Parent_Returning_Representative", "role": "actor", "personaCount": 3, "reason": "Three slants cover switching costs."},
+    {"id": "Parent_Sharing_Representative", "entityId": "Parent_Sharing_Representative", "role": "actor", "personaCount": 3, "reason": "Three slants cover family sharing needs."},
+    {"id": "Parent_Planner_Representative", "entityId": "Parent_Planner_Representative", "role": "actor", "personaCount": 3, "reason": "Three slants cover nap planning habits."},
+    {"id": "Partner_Representative", "entityId": "Partner_Representative", "role": "context", "personaCount": 0, "reason": "Appears only in a parent's invite step."},
+    {"id": "Grandparent_Representative", "entityId": "Grandparent_Representative", "role": "context", "personaCount": 0, "reason": "Appears only in a parent's invite step."},
+    {"id": "Daycare_Representative", "entityId": "Daycare_Representative", "role": "context", "personaCount": 0, "reason": "Appears only in a parent's hand-over step."}
+  ],
+  "timeline": [
+    {"step": 1, "label": "See the listing", "description": "The persona reads the listing and decides whether to install."},
+    {"step": 2, "label": "First open", "description": "The persona opens the app and decides whether to log something."},
+    {"step": 3, "label": "Invite", "description": "The persona decides whether to invite a partner or family member."},
+    {"step": 4, "label": "First week", "description": "The persona decides whether to keep using the app."}
+  ],
+  "rules": [
+    "Label every speculative reason as a hypothesis.",
+    "Give every claim in a report at least one citation.",
+    "State no measured or predicted rates or percentages unless the scenario explicitly asks for them; naming a metric is allowed.",
+    "State nothing as fact beyond the pack's Fact claims.",
+    "Treat every persona as a synthetic representative of a cohort, not a real customer.",
+    "Do not copy personal details from pack evidence into any output.",
+    "Show an actor only its own variant.",
+    "Do not recommend a price.",
+    "Do not choose a market or country."
+  ],
+  "expectedOutputs": [
+    "Objections for each message, by cohort.",
+    "Unanswered questions for each message.",
+    "Expectations the first week does not meet.",
+    "Hypotheses to test, with how to measure each."
+  ],
+  "budget": {"simulationAgentCalls": 36, "cap": 60, "dropped": []}
+}

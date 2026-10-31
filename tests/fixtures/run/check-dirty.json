@@ -1,0 +1,10 @@
+{
+  "violations": [
+    {
+      "rule": "State no measured or predicted rates or percentages unless the scenario explicitly asks for them; naming a metric is allowed.",
+      "quote": "Message B will lift installs.",
+      "fix": "Remove the prediction. Name the metric only."
+    }
+  ],
+  "untraced": ["Parents in the first cohort distrust free offers."]
+}
