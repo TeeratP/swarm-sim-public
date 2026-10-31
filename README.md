@@ -36,3 +36,7 @@ This runs `node --test tests/` and needs no dependencies.
 
 - Design: [docs/superpowers/specs/2026-10-31-swarm-sim-design.md](docs/superpowers/specs/2026-10-31-swarm-sim-design.md)
 - Implementation plan: [docs/superpowers/plans/2026-10-31-swarm-sim-plan.md](docs/superpowers/plans/2026-10-31-swarm-sim-plan.md)
+
+## License
+
+MIT. See [LICENSE](LICENSE).
